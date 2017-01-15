@@ -9,6 +9,7 @@ This template contains all of the most famous and useful plugins.
 * Making possible to use **node.js modules** for the browsers.
 * Reduces the size of pictures with formats: **jpg,jpeg,svg,gif** and **png**.
 * Making **sprites** from **png** and **svg** files.
+* Also contains **[Bower](https://bower.io/)** for more faster downloading and easier installation different libraries.
 
 ## Usage
 Before you begin, you need to download and install [node.js](https://nodejs.org/).
