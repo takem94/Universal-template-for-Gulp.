@@ -4,7 +4,7 @@ This template contains all of the most famous and useful plugins.
 ## What it can do
 
 ### Usage
-Before you begin, you need to install node.js. Download and install from the official website [at this link](https://nodejs.org/)
+Before you begin, you need to download and install [node.js](https://nodejs.org/).
 
 * 1) [Download this template]() and unpackage in a folder.
 
