@@ -1,0 +1,404 @@
+.icon {
+  font-size: 10px;
+}
+
+.icon:before {
+  content: ' ';
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url("../img/sprite-svg.svg");
+  background-repeat: no-repeat;
+  background-size: 52.200300000000006em 2610.2em;
+}
+
+.no-svg .icon:before {
+  background-image: url("../img/sprite-svg.png");
+}
+
+.icon.alarm-clock:before {
+  background-position: -0.5em -0.5em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.archives:before {
+  background-position: -0.5em -52.7em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.atom:before {
+  background-position: -0.5em -104.9em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.browser:before {
+  background-position: -0.5em -157.1em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.cards:before {
+  background-position: -0.5em -209.3em;
+  width: 51.200300000000006em;
+  height: 51.200300000000006em;
+}
+
+.icon.cloudy:before {
+  background-position: -0.5em -261.6em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.cogwheel:before {
+  background-position: -0.5em -313.8em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.compass:before {
+  background-position: -0.5em -366em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.computer:before {
+  background-position: -0.5em -418.2em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.computer-1:before {
+  background-position: -0.5em -470.4em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.cone:before {
+  background-position: -0.5em -522.6em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.crown:before {
+  background-position: -0.5em -574.8em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.diamond:before {
+  background-position: -0.5em -627em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.dice:before {
+  background-position: -0.5em -679.2em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.edit-tools:before {
+  background-position: -0.5em -731.4em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.file:before {
+  background-position: -0.5em -783.6em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.firewall:before {
+  background-position: -0.5em -835.8em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.flask:before {
+  background-position: -0.5em -888em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.gamepad:before {
+  background-position: -0.5em -940.2em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.hierarchy-structure:before {
+  background-position: -0.5em -992.4em;
+  width: 51.200300000000006em;
+  height: 51.200300000000006em;
+}
+
+.icon.ladybug:before {
+  background-position: -0.5em -1044.7em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.laptop:before {
+  background-position: -0.5em -1096.9em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.layers:before {
+  background-position: -0.5em -1149.1em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.levels:before {
+  background-position: -0.5em -1201.3em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.link:before {
+  background-position: -0.5em -1253.5em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.magnifying-glass:before {
+  background-position: -0.5em -1305.7em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.microscope:before {
+  background-position: -0.5em -1357.9em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.open-box:before {
+  background-position: -0.5em -1410.1em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.padlock:before {
+  background-position: -0.5em -1462.3em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.pen:before {
+  background-position: -0.5em -1514.5em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.pie-chart:before {
+  background-position: -0.5em -1566.7em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.play-video:before {
+  background-position: -0.5em -1618.9em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.plug:before {
+  background-position: -0.5em -1671.1em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.protractor:before {
+  background-position: -0.5em -1723.3em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.puzzle:before {
+  background-position: -0.5em -1775.5em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.search:before {
+  background-position: -0.5em -1827.7em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.seo:before {
+  background-position: -0.5em -1879.9em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.shield:before {
+  background-position: -0.5em -1932.1em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.shopping-bag:before {
+  background-position: -0.5em -1984.3em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.shopping-cart:before {
+  background-position: -0.5em -2036.5em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.strategy:before {
+  background-position: -0.5em -2088.7em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.swiss-army-knife:before {
+  background-position: -0.5em -2140.9em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.target:before {
+  background-position: -0.5em -2193.1em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.traffic-lights:before {
+  background-position: -0.5em -2245.3em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.transfer:before {
+  background-position: -0.5em -2297.5em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.visibility:before {
+  background-position: -0.5em -2349.7em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.worldwide:before {
+  background-position: -0.5em -2401.9em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.worldwide-1:before {
+  background-position: -0.5em -2454.1em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.wrench:before {
+  background-position: -0.5em -2506.3em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.icon.writing:before {
+  background-position: -0.5em -2558.5em;
+  width: 51.2em;
+  height: 51.2em;
+}
+
+.test {
+  background: red;
+}
+
+.test .wrap {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+.test .wrap .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.test .wrap .row::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.test .wrap .row .item {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  word-wrap: break-word;
+  width: calc(25% - 30px);
+  overflow: hidden;
+}
+
+.icon.archives {
+  font-size: 5px;
+  text-align: center;
+}
+
+.icon.archives:before {
+  width: 53em;
+  height: 52.5em;
+  background-position: 1.5em -56.7em;
+}
+
+.content {
+  color: red;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+  .test .wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .test .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .test .wrap .row .item {
+    width: calc(33.333333333333336% - 30px);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .test .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .test .wrap .row .item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .test .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .test .wrap .row .item {
+    width: calc(100% - 30px);
+  }
+}
+/*# sourceMappingURL=main.css.map */

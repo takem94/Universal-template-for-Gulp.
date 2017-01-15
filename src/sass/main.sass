@@ -1,0 +1,34 @@
+@import "./_vars.sass"
+@import "./_fonts.sass"
+@import "./_smart-grid"
+
+// sprites for png and svg
+ @import "./_sprite.sass"
+@import "./_sprite-svg.scss"
+
+.test
+  background: red
+  .wrap
+    +wrapper()
+    .row
+      +row-float
+      .item
+        +col-float
+        +col-padding
+        +col-3
+        +col-md-4
+        +col-sm-6
+        +col-xs-12
+        overflow: hidden
+
+.icon.archives
+  font-size: 5px
+  text-align: center
+  &:before
+    width: 53em
+    height: 52.5em
+    background-position: 1.5em -56.7em
+
+.content
+  color: red
+  font-size: 25px
