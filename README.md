@@ -17,6 +17,5 @@ $ npm init
 ```
 * 3) Then you can start use Gulp tasks by this commands:
 
-`$ gulp` - Default command for watching all changes in the ***src/*** folder. 
-
-`$ gulp build` - This command compiling all files in the ***src/*** folder and deploy to ***dist/*** folder. Use this command, when your project is done to production.
+ * `$ gulp` - Default command for watching all changes in the ***src/*** folder. 
+ * `$ gulp build` - This command compiling all files in the ***src/*** folder and deploy to ***dist/*** folder. Use this command, when your project is done to production.
