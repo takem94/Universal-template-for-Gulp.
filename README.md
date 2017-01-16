@@ -13,7 +13,7 @@ This template contains all of the most famous and useful plugins.
 * Also contains **[Bower](https://bower.io/)** for more faster downloads and easier installation various libraries.
 
 ## Usage
-*Before you begin, you need to download and install **[node.js](https://nodejs.org/)**.*
+*Before you begin, you need to download and install* ***[node.js](https://nodejs.org/).***
 
 1. **[Download this template]() and unpackage in a folder.**
 
