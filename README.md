@@ -10,7 +10,7 @@ This template contains all of the most famous and useful plugins.
 * It have **[browserSync](https://browsersync.io/)** plugin. This making autoreload page, when files have changed.
 * Reduces the size of pictures with formats: **jpg,jpeg,svg,gif** and **png**.
 * Making **sprites** from **png** and **svg** files.
-* Have a new [grid system](https://www.npmjs.com/package/smart-grid), which can be used directly in the **SASS**/**SCSS** files.
+* Have a new **[grid system](https://www.npmjs.com/package/smart-grid)**, which can be used directly in the **SASS**/**SCSS** files.
 * Also contains **[Bower](https://bower.io/)** for more faster downloads and easier installation various libraries.
 
 ## Usage
