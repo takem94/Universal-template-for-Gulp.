@@ -7,6 +7,7 @@ This template contains all of the most famous and useful plugins.
 * Compile **Jade**/**Pug** to **HTML**.
 * Make your **JavaScript** code *"es2015"*(**ES6**) to *"es2011"*(**ES5**).
 * Making possible to use **node.js modules** for the browsers.
+* It have **[browserSync](https://browsersync.io/)** plugin, which making autoreload page, when files have changed.
 * Reduces the size of pictures with formats: **jpg,jpeg,svg,gif** and **png**.
 * Making **sprites** from **png** and **svg** files.
 * Have a new [grid system](https://www.npmjs.com/package/smart-grid), which can be used directly in the **SASS**/**SCSS** files.
@@ -23,6 +24,9 @@ This template contains all of the most famous and useful plugins.
  ```
  ```
  $ npm init
+ ```
+ ```
+ $ bower init
  ```
 3. **Then you can start use Gulp tasks by this commands:**
  * `$ gulp preload` - this task need to prepare your workflow in the ***src/*** folder.
