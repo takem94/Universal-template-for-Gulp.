@@ -21,13 +21,8 @@ This template contains all of the most famous and useful plugins.
 2. **To get started use, you need open the folder with template and initialize by this commands in console:**
  ```
  $ npm install
- $ npm install gulpjs/gulp-cli -g
- $ npm install gulpjs/gulp#4.0 --save-dev
- ```
- ```
+ $ bower isntall
  $ npm init
- ```
- ```
  $ bower init
  ```
 3. **Then you can start use Gulp tasks by this commands:**
