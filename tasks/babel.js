@@ -6,9 +6,16 @@ const gulp         = require('gulp'),
 module.exports = (options) => {
     return () => {
         return gulp.src( options.src )
-            .pipe($.cached('babels'))
+			.pipe($.plumber({
+                errorHandler: $.notify.onError((err) => {
+                    return {
+                        title: 'Babel',
+                        message: err.message
+                    };
+                })
+            }))
             .pipe($.babel({
-                presets: ['es2015']
+                presets: ['babel-preset-env']
             }))
             .pipe(gulp.dest(options.dest));
     };

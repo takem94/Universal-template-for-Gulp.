@@ -24,19 +24,13 @@
   ],
   "dependencies": {
     "jquery": "^3.1.1",
-    "normalize-css": "normalize.css#^5.0.0",
-    "font-awesome": "^4.7.0"
+    "normalize-css": "normalize.css#^5.0.0"
   },
   "overrides": {
     "bootstrap": {
       "main": [
         "./dist/js/bootstrap.min.js",
         "./dist/css/bootstrap.min.css"
-      ]
-    },
-    "font-awesome": {
-      "main": [
-        "./css/font-awesome.css"
       ]
     }
   }
