@@ -63,7 +63,7 @@ requireTask('uglify', './tasks/uglify', {
 requireTask('sass', './tasks/sass', {
      src: Src.Sass + 'main.scss',
     dest: Src.Css, 
-    browsers: ['last 4 version','ie 8-9']
+    browsers: ['last 3 version','ie 9']
 });
 
 requireTask('imgOptimize', './tasks/imgOptimize', {

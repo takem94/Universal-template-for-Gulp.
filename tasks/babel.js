@@ -5,7 +5,7 @@ const gulp         = require('gulp'),
 
 module.exports = (options) => {
     return () => {
-        return gulp.src( options.src )
+        return gulp.src([options.src ])
 			.pipe($.plumber({
                 errorHandler: $.notify.onError((err) => {
                     return {
@@ -15,8 +15,9 @@ module.exports = (options) => {
                 })
             }))
             .pipe($.babel({
-                presets: ['babel-preset-env']
+                presets: ["env"]
             }))
+			.pipe($.rename('main.js'))
             .pipe(gulp.dest(options.dest));
     };
 };

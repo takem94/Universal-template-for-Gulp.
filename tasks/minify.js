@@ -8,7 +8,7 @@ module.exports = (options) => {
         return gulp.src( options.src )
             .pipe($.cached('minifys'))
             .pipe($.sourcemaps.init())
-            .pipe($.minifyCss())
+            .pipe($.cleanCss())
             .pipe($.rename({ suffix: options.suffix }))
             .pipe($.sourcemaps.write('.'))
             .pipe(gulp.dest(options.dest));

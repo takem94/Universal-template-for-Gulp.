@@ -14,9 +14,10 @@ module.exports = (options) => {
 				  debug: true,
 				entries: [options.src]
 			 })
-			.transform(babelify.configure({
-				presets : ["env"]
-			}))
+			.transform("babelify", 
+			{
+				presets: ["@babel/preset-env"]
+			})
 			.bundle()
 			.on('error', function(err){
 			  console.log(err.message);
