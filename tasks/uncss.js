@@ -9,6 +9,11 @@ const gulp = require('gulp'),
 module.exports = (options) => {
     return gulp.series(function firstStep() {
         return gulp.src(options.src, { base: options.base })
+            .pipe($.sourcemaps.init())
+            .pipe($.postcss([uncss.postcssPlugin({
+                html: options.html
+            })]))
+            .pipe(gulp.dest(options.dest))
             .pipe($.cleanCss())
             .pipe($.rename({suffix: options.suffix }))
             .pipe($.sourcemaps.write('.'))

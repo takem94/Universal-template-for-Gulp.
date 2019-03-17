@@ -1,11 +1,20 @@
-"use strict";
+require('babel-polyfill');
 
-let createFriendObj = require('./modules/createFriendObj');
+window.onload = function () {
+	console.log('hello worldssss!');
+	function getPromise () {
+	return new Promise (function (resolve) {
+		setTimeout(function() {
+			resolve('done!');
+		},3000)
+	});
+};
 
-let jack = document.querySelector('div');
-let h2 = document.querySelector('h2');
+async function ret() {
+	let getText = await getPromise();
+	
+	console.log(getText);
+}
 
-
-jack.addEventListener("click", (e) => { e.target.style.display = 'none'; })
-
-h2.addEventListener("click", (es) => { jack.style.display = ''; })
+ret();
+};

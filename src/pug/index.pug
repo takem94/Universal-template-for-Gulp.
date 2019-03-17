@@ -5,49 +5,14 @@ html
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         title Universal template
-        link(href="./libs/libs.min.css" rel="stylesheet")
+		
         link(href="./css/main.min.css"  rel="stylesheet")
-
-        <!--[if lte IE 9]>
-            <link rel="stylesheet" href="css/ie.css">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <![endif]-->
     body
         include parts/header.pug
 
-        section.test
-            div.wrap
-                div.row
-                    div.item
-                        i.icon.archives
-                    div.item
-                        i.icon.archives
-                    div.item
-                        i.icon.archives
-                    div.item
-                        i.icon.archives
-
-        section.content
-            div.wrap
-                div.row
-                    div.item
-                        i.fa.fa-apple
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, perferendis tempora! Adipisci delectus eos esse eum fugit ipsa maiores molestias nulla odit omnis possimus quo rem, repellendus reprehenderit sit suscipit.
-                    div.item
-                        i.fa.fa-apple
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, perferendis tempora! Adipisci delectus eos esse eum fugit ipsa maiores molestias nulla odit omnis possimus quo rem, repellendus reprehenderit sit suscipit.
-                    div.item
-                        i.fa.fa-apple
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, perferendis tempora! Adipisci delectus eos esse eum fugit ipsa maiores molestias nulla odit omnis possimus quo rem, repellendus reprehenderit sit suscipit.
-                    div.item
-                        i.fa.fa-apple
-                        | Lorem ipsun dolor sit amet, consectetur adipisicing elit. Nemo, perferendis tempora! Adipisci delectus eos esse eum fugit ipsa maiores molestias nulla odit omnis possimus quo rem, repellendus reprehenderit sit suscipit.
+        div
+            p Hello, World!
 
         include parts/footer.pug
 
-        script(src="./libs/libs.min.js")
         script(src="./js/main.min.js")
-
-        <!--[if lte IE 9]>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.min.js"></script>
-        <![endif]-->
