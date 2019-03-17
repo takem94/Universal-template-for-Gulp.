@@ -48,29 +48,22 @@ requireTask('server', './tasks/server', {
     port: 8550
 });
 
-requireTask('babel', './tasks/babel', {
-    src: [Src.Js + '**/*.js', 
-        '!' + Src.Js + '_js/**', 
-        '!' + Src.Js + '{*.min.js,main.js}'
-    ],
-    dest: Src.Js + '/_js'
-});
-
 requireTask('browserify', './tasks/browserify', {
-    src: Src.Js + '_js/app.js' ,
+    src: Src.Js + 'app.js',
     dest: Src.Js,
     map: 'main.js'
 });
 
 requireTask('uglify', './tasks/uglify', {
     src: Src.Js + 'main.js',
+    suffix: '.min',
     dest: Src.Js
 });
 
 requireTask('sass', './tasks/sass', {
-     src: Src.Sass + 'main.sass',
+     src: Src.Sass + 'main.scss',
     dest: Src.Css, 
-    browsers: ['last 4 version','ie 8-9']
+    browsers: ['last 3 version','ie 9']
 });
 
 requireTask('imgOptimize', './tasks/imgOptimize', {
@@ -116,10 +109,6 @@ requireTask('bower', './tasks/bower', {
     suffix: '.min'
 });
 
-requireTask('smartgrid', './tasks/smartgrid', {
-    dest:  Src.Path + 'Sass'
-});
-
 requireTask('clearcached', './tasks/clearcached', {
 });
 
@@ -128,12 +117,12 @@ requireTask('pug', './tasks/pug', {
     dest:  Src.Path
 });
 
-gulp.task('preload', gulp.series('smartgrid','sass','minify','bower','babel', 'browserify', 'uglify'));
+gulp.task('preload', gulp.series('sass','minify','bower', 'browserify','uglify'));
 
-gulp.task('build', gulp.series('clean', 'bower', 'sass', 'pug', 'uncss', 'imgOptimize', 'babel', 'browserify', 'uglify', 'Trans'));
+gulp.task('build', gulp.series('clean', 'bower', 'sass', 'pug', 'uncss', 'imgOptimize', 'browserify', 'uglify', 'Trans'));
 
 gulp.task('watch', () => {
-    gulp.watch(Src.Sass, gulp.series('sass','minify'));
+    gulp.watch(Src.Sass + '**/*.scss', gulp.series('sass','minify'));
     gulp.watch(Src.Css + '*.css').on('change', browserSync.reload);
     gulp.watch(Src.Html).on('change', browserSync.reload);
     gulp.watch(Src.Img).on('change', browserSync.reload);
@@ -142,15 +131,11 @@ gulp.task('watch', () => {
     gulp.watch('./bower.json', gulp.series('bower')).on('change', browserSync.reload);
     gulp.watch(Src.Path + 'pug/**/*.pug', gulp.series('pug'));
     gulp.watch([
-        Src.Js + '**/*.js',
-        '!' + Src.Js + 'main.js',
-        '!' + Src.Js + 'main.min.js',
-        '!' + Src.Js + '_js/**'
-    ], gulp.series(
-        'babel',
-        'browserify',
-        'uglify'
-    )).on('change', browserSync.reload);
+        Src.Js + 'modules/*.js',
+        Src.Js + 'app.js'
+    ], gulp.series('browserify'));
+    gulp.watch(Src.Js + 'main.js', gulp.series('uglify'));
+    gulp.watch(Src.Js + 'main.min.js').on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.parallel('bower','server','watch'));

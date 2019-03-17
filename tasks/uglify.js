@@ -9,7 +9,7 @@ module.exports = (options) => {
             .pipe($.rename({
                 suffix: options.suffix
             }))
-            .pipe($.uglifyjs())
+            .pipe($.uglify())
             .pipe(gulp.dest(options.dest));
     };
 };

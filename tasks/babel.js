@@ -5,11 +5,19 @@ const gulp         = require('gulp'),
 
 module.exports = (options) => {
     return () => {
-        return gulp.src( options.src )
-            .pipe($.cached('babels'))
-            .pipe($.babel({
-                presets: ['es2015']
+        return gulp.src([options.src ])
+			.pipe($.plumber({
+                errorHandler: $.notify.onError((err) => {
+                    return {
+                        title: 'Babel',
+                        message: err.message
+                    };
+                })
             }))
+            .pipe($.babel({
+                presets: ["env"]
+            }))
+			.pipe($.rename('main.js'))
             .pipe(gulp.dest(options.dest));
     };
 };

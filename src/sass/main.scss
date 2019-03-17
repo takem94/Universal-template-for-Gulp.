@@ -1,0 +1,10 @@
+@import "vars";
+@import "fonts";
+
+// Sprites for png and svg
+@import "sprite";
+@import "sprite-svg";
+
+body, html {
+	background-color: #ccc;
+}
