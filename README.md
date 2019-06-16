@@ -23,7 +23,7 @@ This template contains all of the most famous and useful plugins.
  $ npm init
  $ npm install
  $ bower init
- $ bower isntall
+ $ bower install
  ```
 3. **Then you can start use Gulp tasks by this commands:**
  * `$ gulp preload` - this task need to prepare your workflow in the ***src/*** folder.
