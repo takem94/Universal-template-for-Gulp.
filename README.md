@@ -33,4 +33,4 @@ This template contains all of the most famous and useful plugins.
  * `$ gulp clearcached` - just clearning all cache from memory.
  
 4. **Known bugs:**
- * Don't use numbers at start as names for svg/png icon in **src/img/Sprites/SpritesSrc** directory.
+ * Don't use numbers at the beginning of names for svg/png icons in **src/img/Sprites/SpritesSrc** directory.
