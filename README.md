@@ -32,5 +32,5 @@ This template contains all of the most famous and useful plugins.
  * `$ gulp build` - this task compiling all files in the ***src/*** folder and deploy to ***dist/*** folder. Use this command, when your project is done to production.
  * `$ gulp clearcached` - just clearning all cache from memory.
  
-4. **Known bugs:**
+ ## Known bugs:
  * Don't use numbers at the beginning of names for svg/png icons in **src/img/Sprites/SpritesSrc** directory.
