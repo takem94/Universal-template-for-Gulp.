@@ -12,7 +12,7 @@ This template contains all of the most famous and useful plugins.
 * It have **[browserSync](https://browsersync.io/)** plugin. This making autoreload page, when files have changed.
 * Reduces the size of pictures with formats: **jpg,jpeg,svg,gif** and **png**.
 * Making **sprites** from **png** and **svg** files.
-* Also contains **[Bower](https://bower.io/)** for more faster downloads and easier installation various libraries.
+* Also contains **[Yarn](https://bower.io/)** for more faster downloads and easier installation dependencies.
 
 ## Usage
 *Before you begin, you need to download and install* ***[node.js](https://nodejs.org/).***
@@ -20,11 +20,13 @@ This template contains all of the most famous and useful plugins.
 1. **[Download this template]() and unpackage in a folder.**
 
 2. **To get started use, you need open the folder with template and initialize by this commands in console:**
+**If you don't have Yarn, you must installed it by this command globaly:**
  ```
- $ npm init
- $ npm install
- $ bower init
- $ bower install
+ $ npm install yarn -G
+ ```
+ **And now, you can easily install all needed modules by this command:**
+ ```
+ $ yarn
  ```
 3. **Then you can start use Gulp tasks by this commands:**
  * `$ gulp preload` - this task need to prepare your workflow in the ***src/*** folder.
