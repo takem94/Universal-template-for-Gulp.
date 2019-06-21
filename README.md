@@ -20,6 +20,7 @@ This template contains all of the most famous and useful plugins.
 1. **[Download this template]() and unpackage in a folder.**
 
 2. **To get started use, you need open the folder with template and initialize by this commands in console:**
+
 **If you don't have Yarn, you must installed it by this command globaly:**
  ```
  $ npm install yarn -G
