@@ -6,7 +6,7 @@ const gulp     = require('gulp'),
 
 module.exports = (options) => {
         return gulp.series(function firstStep() {
-            return gulp.src([options.src ,options.filt], { base: options.base })
+            return gulp.src([options.src, ...options.filt], { base: options.base })
                 .pipe($.plumber({
                     errorHandler: $.notify.onError((err) => {
                         return {
@@ -16,13 +16,13 @@ module.exports = (options) => {
                     })
                 }))
                 .pipe($.cached('imgOptimization'))
-                .pipe($.imagemin({
-                    progressive: true,
-                    use: [pngquant()]
-                }))
+                .pipe($.imagemin())
                 .pipe(gulp.dest(options.dest));
-        },function secondStep() {
-            return gulp.src([options.srcJpg, options.filt], { base: options.base })
+        }, function secondStep() {
+            return gulp.src([options.srcMove], { base: options.base })
+                .pipe(gulp.dest(options.dest));
+        }, function thirdStep() {
+            return gulp.src([options.srcJpg, ...options.filt], { base: options.base })
                 .pipe($.plumber({
                     errorHandler: $.notify.onError((err) => {
                         return {

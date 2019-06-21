@@ -9,8 +9,9 @@ module.exports = (options) => {
         return gulp.src(options.srcSpr)
             .pipe($.spritesmith({
                 imgName: 'sprite.png',
-                cssName: '_sprite.sass',
-                imgPath: options.imgPath
+                cssName: '_sprite.scss',
+                imgPath: options.imgPath,
+				algorithm: 'top-down'
             }))
             .pipe(gulp.dest(options.destSpr));
     },function secondStep() {

@@ -1,20 +1,24 @@
-require('babel-polyfill');
+import "regenerator-runtime/runtime";
+import "core-js"; 
+
+import "./modules/main.js"
 
 window.onload = function () {
-	console.log('hello worldssss!');
-	function getPromise () {
-	return new Promise (function (resolve) {
-		setTimeout(function() {
-			resolve('done!');
-		},3000)
-	});
-};
-
-async function ret() {
-	let getText = await getPromise();
+	console.log('Hello, World!');
 	
-	console.log(getText);
-}
+    function getPromise () {
+        return new Promise (function (resolve) {
+            setTimeout(function() {
+                resolve('done!');
+            },3000)
+        });
+	};
 
-ret();
+	async function ret() {
+		let getText = await getPromise();
+		
+		console.log(getText);
+	}
+
+	ret();
 };

@@ -1,3 +1,5 @@
+include templates/mixins.pug
+
 doctype html
 html
     head
@@ -11,7 +13,8 @@ html
         include parts/header.pug
 
         div
-            p Hello, World!
+            p Hello, World! And other!
+            +icon('alarm-clock','red_mod')
 
         include parts/footer.pug
 

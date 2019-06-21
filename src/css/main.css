@@ -1,5 +1,216 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-alarm-clock {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-browser {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-computer {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-dice {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-edit-tools {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-file {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-firewall {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-flask {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-gamepad {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-hierarchy-structure {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-laptop {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-layers {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-levels {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-link {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-magnifying-glass {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-microscope {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-open-box {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-padlock {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-pen {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-pie-chart {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-play-video {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-protractor {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-puzzle {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-search {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-seo {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-shield {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-shopping-bag {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-shopping-cart {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-strategy {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-swiss-army-knife {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-target {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-traffic-lights {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-transfer {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-visibility {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-worldwide {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-worldwide-1 {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-wrench {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-writing {
+  font-size: 51.2rem;
+  width: 1em;
+}
+
 body,
 html {
-  background-color: #ccc;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.red_mod {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -19,7 +19,6 @@ module.exports = (options) => {
             .pipe($.sass())
             .pipe($.groupCssMediaQueries())
             .pipe($.autoprefixer({
-                browsers: options.browsers,
                 cascade: false
             }))
             .pipe($.sourcemaps.write('.'))

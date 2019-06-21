@@ -4,7 +4,8 @@ const gulp         = require('gulp'),
       source       = require('vinyl-source-stream'),
       buffer       = require('vinyl-buffer'),
       browserify   = require('browserify'),
-      babelify     = require('babelify');
+      babelify     = require('babelify'),
+	  $    		   = require('gulp-load-plugins')();
 
 
 module.exports = (options) => {
@@ -19,7 +20,7 @@ module.exports = (options) => {
 					  "useBuiltIns": false,
 					}],
 				],
-				"plugins": [ "@babel/plugin-transform-runtime"]
+				"plugins": ["@babel/plugin-transform-runtime"]
 			}))
 			.bundle()
 			.on('error', function(err){

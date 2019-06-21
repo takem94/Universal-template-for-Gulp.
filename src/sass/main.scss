@@ -6,5 +6,14 @@
 @import "sprite-svg";
 
 body, html {
-	background-color: #ccc;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+.red_mod {
+	width: 50px;
+	height: 50px;
+	transition: all 1s ease; 
+	user-select: none;
 }
